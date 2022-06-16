@@ -1,6 +1,7 @@
 name: GitHub Actions Demo
 on:
-  issue_comment:
+#  issue_comment:
+  pull_request_comment:
 
 jobs:
   Explore-GitHub-Actions:
