@@ -1,11 +1,14 @@
 name: GitHub Actions Demo
 on:
 #  issue_comment:
+on:
+  # Trigger the workflow when a comment [not on PR diff] is added to the pull request
   pull_request_review:
+    types: [ submitted ]
 
 jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
+      - run: echo "🎉 The job was automatically triggered by a ${{ github.event.review.body }} event."
 
