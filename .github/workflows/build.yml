@@ -1,5 +1,5 @@
 name: GitHub Actions Demo
-on:
+#on:
 #  issue_comment:
 on:
   # Trigger the workflow when a comment [not on PR diff] is added to the pull request
